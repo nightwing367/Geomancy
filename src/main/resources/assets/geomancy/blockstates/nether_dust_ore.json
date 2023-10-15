@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "geomancy:block/nether_dust_ore"
+    }
+  }
+}
