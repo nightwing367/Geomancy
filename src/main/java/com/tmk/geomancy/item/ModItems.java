@@ -18,4 +18,14 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_DUST = ITEMS.register("raw_dust",
             ()-> new Item(new Item.Properties()));
-}
+    public static final RegistryObject<Item> DUST_DETECTOR = ITEMS.register("dust_detector",
+            ()-> new DustDetectorItem(new Item.Properties().durability(100)));
+
+    //Foods
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
+            ()-> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+
+    //Fuel
+    public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
+            ()-> new FuelItem(new Item.Properties(), 400));
+    }

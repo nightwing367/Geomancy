@@ -1,0 +1,9 @@
+{
+  "values": [
+    "geomancy:dust_block",
+    "geomancy:raw_dust_block",
+    "geomancy:dust_ore",
+    "geomancy:deepslate_dust_ore",
+    "#forge:ores"
+  ]
+}

@@ -24,7 +24,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DUST_BLOCK = registerBlock("dust_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> RAW_DUST_BLOCK = registerBlock("raw_dust_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK).sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> DUST_ORE = registerBlock("dust_ore",
             ()-> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3,6)));
@@ -34,6 +34,10 @@ public class ModBlocks {
             ()-> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).strength(4f).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
     public static final RegistryObject<Block> END_STONE_DUST_ORE = registerBlock("end_stone_dust_ore",
             ()-> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
     }

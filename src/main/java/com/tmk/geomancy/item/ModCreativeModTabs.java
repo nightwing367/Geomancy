@@ -25,16 +25,24 @@ public class ModCreativeModTabs {
                         //Items
                         pOutput.accept(ModItems.DUST.get());
                         pOutput.accept(ModItems.RAW_DUST.get());
+                        pOutput.accept(ModItems.DUST_DETECTOR.get());
 
                         //Block
                         pOutput.accept(ModBlocks.DUST_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_DUST_BLOCK.get());
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
                         //Ore
                         pOutput.accept(ModBlocks.DUST_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_DUST_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_DUST_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_DUST_ORE.get());
+
+                        //Food
+                        pOutput.accept(ModItems.STRAWBERRY.get());
+
+                        //Fuel
+                        pOutput.accept(ModItems.PINE_CONE.get());
                     }))
                     .build());
 }

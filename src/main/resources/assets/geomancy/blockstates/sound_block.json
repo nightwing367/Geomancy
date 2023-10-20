@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "geomancy:block/sound_block"
+    }
+  }
+}
